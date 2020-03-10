@@ -1,0 +1,109 @@
+body,html {
+  padding: 0;
+  margin: 0;
+  background-color: #f5efe3;
+}
+
+.navBar {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  padding-top: 25px;
+  padding-left: 250px;
+  padding-right: 250px;
+  justify-content: space-around;
+}
+
+.navLink {
+  font-size: 25px;
+  display: flex;
+}
+
+.navLink a {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+
+.navLink a:hover {
+  background-color: black;
+  color: white;
+}
+
+.current {
+  font-size: 25px;
+  display: flex;
+}
+
+.current a {
+  display: flex;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.title {
+  display: flex;
+  font-size: 120px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.subtitle {
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.text p {
+  text-indent: 2em;
+  font-family: 'Shadows Into Light';
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
+  margin-left: 190px;
+  margin-right: 190px;
+  line-height: 1.3;
+}
+
+.text2 {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+  font-family: 'Shadows Into Light';
+  font-size: 30px;
+}
+
+.readmore {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  font-size: 25px;
+}
+.readmore a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+
+.readmore a:hover {
+  background-color: black;
+  color: white;
+}

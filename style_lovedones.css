@@ -1,0 +1,44 @@
+body,html {
+  padding: 0;
+  margin: 0;
+  background-color: #f5efe3;
+}
+
+.navBar {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  padding-top: 25px;
+  padding-left: 250px;
+  padding-right: 250px;
+  justify-content: space-around;
+}
+
+.navLink {
+  font-size: 25px;
+  display: flex;
+}
+
+.navLink a {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+
+.navLink a:hover {
+  background-color: black;
+  color: white;
+}
+
+.current {
+  font-size: 25px;
+  display: flex;
+}
+
+.current a {
+  display: flex;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
