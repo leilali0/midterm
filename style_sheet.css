@@ -1,13 +1,25 @@
+* {
+  box-sizing: border-box;
+}
 body,html {
   padding: 0;
   margin: 0;
   background-color: #f5efe3;
+  overflow: scroll;
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+.siteWrap {
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  border: 5px solid #ff0072;
 }
 
 .navBar {
   display: flex;
   list-style-type: none;
-  overflow: hidden;
   padding-top: 25px;
   padding-left: 250px;
   padding-right: 250px;
@@ -49,6 +61,7 @@ body,html {
   justify-content: flex-start;
   padding-left: 180px;
   margin-top: 170px;
+  font-weight: bold;
 }
 
 .title2 {
@@ -56,6 +69,7 @@ body,html {
   font-size: 180px;
   justify-content: flex-end;
   padding-right: 180px;
+  font-weight: bold;
 }
 
 .outsideContainer {
@@ -72,24 +86,29 @@ body,html {
 }
 
 .nav2 {
-  display: flex;
+  display: block;
   list-style-type: none;
   margin-left: 60px;
-  padding-top: 8px;
   width: 180px;
   font-size: 22px;
+  font-weight: 400;
+  float: left;
+  position: -webkit-sticky;
   position: sticky;
+  top: 100px;
+  margin-top: 200px;
 }
 
 .nav2 a {
   display: block;
   color: #000;
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   text-decoration: none;
 }
 
-.nav a:hover {
+.nav2 a:hover {
   background-color: #222;
   color: white;
 }
@@ -120,13 +139,6 @@ body,html {
   flex-direction: column;
   width: 850px;
 }
-
-/* .subtitle2 {
-  display: flex;
-  font-size: 50px;
-  font-weight: bold;
-  justify-content: center;
-} */
 
 .ed {
   display: flex;
@@ -182,4 +194,13 @@ body,html {
 .readmore a:hover {
   background-color: black;
   color: white;
+}
+
+.footer {
+  display: flex;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  width: 100%;
+  color: black;
+  justify-content: center;
 }

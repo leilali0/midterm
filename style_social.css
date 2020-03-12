@@ -2,16 +2,16 @@ body,html {
   padding: 0;
   margin: 0;
   background-color: #f5efe3;
+  /* font-family: 'PT Sans', sans-serif; */
+  font-family: 'Nunito', sans-serif;
 }
 
 .navBar {
   display: flex;
   list-style-type: none;
   overflow: hidden;
-  position: -webkit-sticky;
-  position: sticky;
   padding-top: 25px;
-  padding-left: 230px;
+  padding-left: 250px;
   padding-right: 250px;
   justify-content: space-around;
 }
@@ -22,10 +22,8 @@ body,html {
 }
 
 .navLink a {
-  display: block;
-  display: inline;
+  display: flex;
   color: black;
-  text-align: center;
   text-decoration: none;
   border-bottom: 2px solid currentColor;
 }
@@ -38,13 +36,150 @@ body,html {
 .current {
   font-size: 25px;
   display: flex;
-  padding-left: 50px;
 }
 
 .current a {
-  display: block;
-  display: inline;
+  display: flex;
   color: black;
   text-align: center;
   text-decoration: none;
+}
+
+.title{
+  display: flex;
+  font-size: 110px;
+  font-weight: bold;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.intro {
+  margin-left: 225px;
+  margin-right: 200px;
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.intro p:first-child {
+  font-family: 'PT Sans', sans-serif;
+  text-indent: 2em;
+  font-size: 24px;
+}
+
+.intro p:last-child {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+.mainContainer {
+  margin: 80px;
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: auto 100px auto 100px auto auto auto;
+}
+
+
+.article {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.article:hover .image {
+  opacity: 0.3;
+}
+
+.article:hover .middle {
+  opacity: 1;
+}
+
+.more {
+  font-size: 25px;
+}
+
+.more a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+
+.more a:hover {
+  background-color: black;
+  color: white;
+}
+
+.image1 {
+  grid-column: 2/6;
+}
+
+.text {
+  display: grid;
+  grid-column: 7/11;
+  margin-right: 80px;
+  font-size: 22px;
+  align-items: center;
+  font-family: 'Shadows Into Light';
+}
+
+img{
+  width: 550px;
+}
+
+.image2 {
+  grid-row-start: 3;
+  grid-column: 6/10;
+}
+
+.text2 {
+  display: grid;
+  grid-column: 2/6;
+  margin-right: 50px;
+  grid-row-start: 3;
+  font-size: 22px;
+  align-items: center;
+  font-family: 'Shadows Into Light';
+}
+
+.image3 {
+  grid-row-start: 5;
+  grid-column: 4/8;
+}
+
+.text3 {
+  display: grid;
+  margin-top: 30px;
+  margin-left: 30px;
+  grid-column: 3/9;
+  grid-row-start: 6;
+  font-size: 22px;
+  align-items: center;
+  font-family: 'Shadows Into Light';
+}
+
+.footer {
+  display: grid;
+  grid-row-start: 7;
+  grid-column: 3/9;
+  margin-top: 100px;
+  margin-bottom: -50px;
+  width: 100%;
+  color: black;
+  text-align: center;
 }
