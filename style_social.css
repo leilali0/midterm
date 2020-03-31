@@ -2,7 +2,6 @@ body,html {
   padding: 0;
   margin: 0;
   background-color: #f5efe3;
-  /* font-family: 'PT Sans', sans-serif; */
   font-family: 'Nunito', sans-serif;
 }
 
@@ -182,4 +181,151 @@ img{
   width: 100%;
   color: black;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .navBar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navLink a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid currentColor;
+  }
+
+  .navLink a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .current {
+    font-size: 25px;
+    display: flex;
+  }
+
+  .current a {
+    display: flex;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .title{
+    display: flex;
+    font-size: 60px;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro p:first-child {
+    font-family: 'PT Sans', sans-serif;
+    text-indent: 2em;
+    font-size: 18px;
+  }
+
+  .intro p:last-child {
+    font-size: 20px;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    opacity: 0;
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .article:hover .image {
+    opacity: 0.3;
+  }
+
+  .article:hover .middle {
+    opacity: 1;
+  }
+
+  .more {
+    font-size: 20px;
+  }
+
+  .more a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid currentColor;
+  }
+
+  .more a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  img {
+    width: 400px;
+  }
+
+  .image1 {
+    display: flex;
+    justify-content: center;
+  }
+  .text {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    font-family: 'Shadows Into Light';
+    margin-bottom: 50px;
+  }
+
+  .image2 {
+    display: flex;
+    justify-content: center;
+  }
+  .text2 {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    font-family: 'Shadows Into Light';
+    margin-bottom: 50px;
+  }
+
+  .image3 {
+    display: flex;
+    justify-content: center;
+  }
+  .text3 {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    font-family: 'Shadows Into Light';
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
 }

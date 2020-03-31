@@ -202,3 +202,171 @@ body,html {
   color: black;
   justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+  body,html {
+    padding: 0;
+    margin: 0;
+    background-color: #f5efe3;
+    overflow: none;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .navBar {
+    display: flex;
+    list-style-type: none;
+    padding-top: 25px;
+    padding-left: 250px;
+    padding-right: 250px;
+    justify-content: space-around;
+  }
+
+  .navLink {
+    font-size: 25px;
+    display: flex;
+  }
+
+  .navLink a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid currentColor;
+  }
+
+  .navLink a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .current {
+    font-size: 25px;
+    display: flex;
+  }
+
+  .current a {
+    display: flex;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .title {
+    display: flex;
+    font-size: 180px;
+    justify-content: flex-start;
+    padding-left: 180px;
+    margin-top: 170px;
+    font-weight: bold;
+  }
+
+  .title2 {
+    display: flex;
+    font-size: 180px;
+    justify-content: flex-end;
+    padding-right: 180px;
+    font-weight: bold;
+  }
+
+  .outsideContainer {
+    display: flex;
+    margin-top: 200px;
+    margin-left: 150;
+    margin-right: 150px;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+  }
+
+  .sec1 {
+    display: flex;
+  }
+
+  .subtitle {
+    display: flex;
+    font-size: 80px;
+    font-weight: bold;
+    width: 300px;
+  }
+
+  .text{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 32px;
+    font-size: 23px;
+    width: 450px;
+  }
+
+  .sec2 {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    width: 850px;
+  }
+
+  .ed {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-top: 100px;
+  }
+
+  .ed_title {
+    font-weight: 400;
+    font-size: 60px;
+  }
+
+  .ed_text {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .ed_subtitle2 {
+    color: #363636;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .ed_diagnose {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .readmore {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 25px;
+  }
+  .readmore a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid currentColor;
+  }
+
+  .readmore a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .footer {
+    display: flex;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    width: 100%;
+    color: black;
+    justify-content: center;
+  }
+}
